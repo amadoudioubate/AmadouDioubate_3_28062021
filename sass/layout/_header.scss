@@ -1,0 +1,12 @@
+/*---------------------------------------*/
+/*==       EN TETE (HEADER)              */
+/*---------------------------------------*/
+.en-tete{
+    background-color: $couleur-blanc;
+    height: 60px;
+    @include centrer;
+    &__logo{
+        font-size: 2rem;
+        font-weight: unset;
+    }
+}

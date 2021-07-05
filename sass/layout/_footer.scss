@@ -1,0 +1,34 @@
+/*--------------------------------------------*/
+/*==       PIED DE PAGE (FOOTER)              */
+/*--------------------------------------------*/
+.pied-de-page{
+    padding: 20px;
+    background-color: $couleur-pied-de-page;
+    &__titre{
+        color: $couleur-blanc;
+        font-weight: unset;
+        font-size: 1.1rem;
+    }
+    &__lien{
+        margin-bottom: 5px;
+        & a{
+            color:$couleur-blanc;
+            font-size: .9rem;
+        }
+    }
+    &__icone{
+        margin-right: 10px;
+        &--fourchette{
+            font-size: .8rem;
+            padding-right: 2px;
+        }
+        &--partenaire{
+            font-size: .7rem;
+        }
+    }
+}
+
+
+    
+    
+       

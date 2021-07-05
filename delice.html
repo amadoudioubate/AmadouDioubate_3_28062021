@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu - Le délice des sens</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./public/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--En tête du site-->
+        <header class="en-tete">
+            <i class="fas fa-arrow-left en-tete__retour"></i>
+            <h1 class="en-tete__logo">ohmyfood</h1>
+        </header>   
+        <!--Conteneur--> 
+        <main class="conteneur">
+            <!--Image associée au menu le délice des sens-->
+            <img class="image" src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat le délice des sens"/>
+            <div class="menu">
+                <!--section nom menu-->
+                <section class="menu__gastronomique">
+                    <h2 class="menu__recettes">Le délice des sens</h2>
+                    <i class="fas fa-heart menu__coeur"></i>
+                </section>
+                <!--Section entrée-->
+                <section class="menu__composition">
+                    <p class="menu__legende"><span>entr</span>ées</p>
+                    <!--les differentes entrées-->
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Tartare de thon</p>
+                            <div class="menu__detail">
+                                <p>Assaisonné au yuzu</p>
+                                <p>25£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Bouchée de homard croustillant </p>
+                            <div class="menu__detail">
+                                <p>Et sa farandole de petits légumes</p>
+                                <p>35£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Velouté de cèpes</p>
+                            <div class="menu__detail">
+                                <p>Aux truffes</p>
+                                <p>20£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+                </section>
+                <!--Section plat-->
+                <section class="menu__composition">
+                    <p class="menu__legende"><span>plat</span>s</p>
+                    <!--les differentes plats-->
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Poulet rôti aux herbes de Provence</p>
+                            <div class="menu__detail">
+                                <p>Et sa crème de truffe</p>
+                                <p>40£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Langouste rôtie</p>
+                            <div class="menu__detail">
+                                <p>Et ses légumes de saison</p>
+                                <p>35£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Côte de boeuf Angus</p>
+                            <div class="menu__detail">
+                                <p>Et sa purée de panais</p>
+                                <p>44£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+                </section>
+                
+                <!--Section dessert-->
+                <section class="menu__composition">
+                    <p class="menu__legende"><span>dess</span>erts</p>
+                    <!--les differents desserts-->
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Farandole de desserts</p>
+                            <div class="menu__detail">
+                                <p>Du chef</p>
+                                <p>18£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Crème brulée</p>
+                            <div class="menu__detail">
+                                <p>Revisitée</p>
+                                <p>22£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <p class="menu__nom">Tiramisu</p>
+                            <div class="menu__detail">
+                                <p>À la noisette</p>
+                                <p>23£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+                </section>
+                <button class="menu__bouton menu__bouton--commande">Commander</button>
+            </div>   
+        </main>
+        <!--Pied de page du site-->
+        <footer class="pied-de-page">
+            <h2 class="pied-de-page__titre">ohmyfood</h2>
+            <nav>
+                <ul class="pied-de-page__navigation">
+                    <li class="pied-de-page__lien"><a href="#"><i class="fas fa-utensils pied-de-page__fourchette"></i>Propososer un restaurant</a></li>
+                    <li class="pied-de-page__lien"><a href="#"><i class="fas fa-hands-helping pied-de-page__partenaire"></i>Devenir partenaire</a></li>
+                    <li class="pied-de-page__lien"><a href="#">Mentions légales</a></li>
+                    <li class="pied-de-page__lien"><a href="mailto:dioubateamadou11@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+/*----------------------------------------------------------*/
+/*==       SECTION MENU RESTAURANT (RESTAURANT)             */
+/*----------------------------------------------------------*/
+.restaurant{
+    padding: 10px 20px;
+    background: $couleur-fond;
+    font-size: $taille-titre-section;
+    &__titre{
+        margin-bottom: 20px;
+    }
+    &__carte{
+        background: white;
+        position: relative;
+        margin-bottom: 20px;
+        @include bordureArrondie;
+    }
+    &__image{
+        width: 100%;
+        height: 160px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+    &__legende{
+        margin: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 80px;
+        height: 30px;
+        background: $couleur-tertiaire;
+        font-size: .9rem;
+        font-weight: 900;
+        color: green;
+        @include centrer;
+    }   
+    &__menu{
+        @include espaceEntreElement;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 20px;
+    } 
+    &__plat{
+        font-size: 1rem;
+        & h4{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        & p{
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+    &__coeur{
+        font-size: 1.3rem;
+        height: 40px;
+    }
+}
+
+
+
+

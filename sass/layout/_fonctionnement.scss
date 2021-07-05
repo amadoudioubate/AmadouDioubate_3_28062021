@@ -1,0 +1,53 @@
+/*----------------------------------------------------------*/
+/*==       SECTION FONCTIONNEMENT (FONCTIONNEMENT)          */
+/*----------------------------------------------------------*/
+.fonctionnement{
+    padding: 40px 20px;
+    font-size: $taille-titre-section;
+    background-color: $couleur-blanc;
+    &__contenu{
+        position: relative;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        background-color: $couleur-fond;
+        height: 60px;
+        @include ombre;
+        @include bordureArrondie;
+        @include centrerV;
+    }
+    &__numero{
+        position: absolute;
+        left: -12px;
+        top: 18px;
+        height: 22px;
+        width: 22px;
+        background-color: $couleur-principale;
+        color: $couleur-blanc;
+        font-size: 0.8rem;
+        @include centrer;
+        @include cercle;
+    } 
+    &__icone{
+        @include centrerV;
+        margin-left: 30px;
+        margin-right: 5px;
+        font-size: $taille-contenu-icone;
+        width: 30px;
+        &--bleu{
+            color: $couleur-principale;
+        }
+        &--fonce{
+            color: #858282;
+        }
+    } 
+    &__possibilite{
+        font-weight: 900;
+        font-size: $taille-contenu-texte;
+    }  
+}
+
+
+/*.modi::before{
+    width: 10px;
+    height: 16px;
+}*/

@@ -1,0 +1,32 @@
+/*----------------------------------------------------------*/
+/*==       SECTION PRESENTATION (PRESENTATION)              */
+/*----------------------------------------------------------*/
+.presentation{
+    padding: 10px 0px;
+    background: $couleur-fond;
+    text-align: center;
+    &__entreprise{
+        width: 300px;
+        margin: 0 auto;   
+    }
+    &__titre{
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+    }
+    &__restaurants{
+        color:$couleur-pied-de-page;
+        margin-top: 0;
+    }
+    &__bouton{
+        height: 45px;
+        border-radius: 25px;
+        background: linear-gradient($couleur-secondaire,$couleur-principale);
+        color: $couleur-blanc;
+        border:none;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: .9rem;
+    }
+}

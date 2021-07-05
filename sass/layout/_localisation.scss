@@ -1,0 +1,23 @@
+/*----------------------------------------------------------*/
+/*==       SECTION LOCALISATION (LOCALISATION)              */
+/*----------------------------------------------------------*/
+.localisation{
+   background: linear-gradient($couleur-fond,$couleur-ombre,$couleur-ombre,$couleur-ombre);
+   @include centrerH;
+   &__affichage {
+        @include centrer;
+        height: 50px;
+    }
+    &__icone{
+        height: 30px;
+        width: 30px;
+        @include centrerV;
+    }
+    &__ville{
+        height: 30px;
+        width: 150px;
+        font-weight: 800;
+        border: none;
+        background: inherit;
+    }
+}

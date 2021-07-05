@@ -1,0 +1,27 @@
+@mixin bordureArrondie {
+    border-radius: 19px;
+}
+@mixin cercle {
+    border-radius: 50%;
+}
+@mixin ombre{
+    box-shadow: 0 0 10px 3px $couleur-ombre;
+}
+@mixin centrer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin centrerH {
+    display: flex;
+    justify-content: center;
+}
+@mixin centrerV {
+    display: flex;
+    align-items: center;
+}
+@mixin espaceEntreElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

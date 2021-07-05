@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu - La palette du goût</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./public/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--En tête du site-->
+        <header class="en-tete">
+            <i class="fas fa-arrow-left en-tete__retour"></i>
+            <h1 class="en-tete__logo">ohmyfood</h1>
+        </header>   
+        <!--Conteneur--> 
+        <main class="conteneur">
+            <!--Image associée au menu la palette du goût-->
+            <img class="image" src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+            <div class="menu">
+                <!--section nom menu-->
+                <section class="menu__gastronomique">
+                    <h2 class="menu__recettes">La palette du goût</h2>
+                    <i class="fas fa-heart menu__coeur"></i>
+                </section>
+                <!--Section entrée-->
+                <section class="menu__composition">
+                    <p class="menu__legende"><span>entr</span>ées</p>
+                    <!--les differentes entrées-->
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Fricassée d'escargot</h3>
+                            <div class="menu__detail">
+                                <p>Au piment d'Espelette</p>
+                                <p class="menu__prix">25£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Foie gras de canard mi-cuit</h3>
+                            <div class="menu__detail">
+                                <p>Et ses copeaux de truffe noire</p>
+                                <p class="menu__prix">35£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Oeuf au plat</h3>
+                            <div class="menu__detail">
+                                <p>Assaisonné à la truffe sur lit de caviar</p>
+                                <p class="menu__prix">20£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+                </section>
+                <!--Section plat-->
+                <section class="menu__composition">
+                    <p class="menu__legende"><span>plat</span>s</p>
+                    <!--les differentes plats-->
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Filet de boeuf aux herbes</h3>
+                            <div class="menu__detail">
+                                <p>Accompagné de sa ribambelle de légumes</p>
+                                <p class="menu__prix">40£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Parmentier de queue de boeuf</h3>
+                            <div class="menu__detail">
+                                <p>À la truffe noire sur sa purée de panais</p>
+                                <p class="menu__prix">35£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Filet de turbot</h3>
+                            <div class="menu__detail">
+                                <p>Aux agrumes</p>
+                                <p class="menu__prix">44£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+                </section>
+                
+                <!--Section dessert-->
+                <section class="menu__composition">
+                    <p class="menu__legende"><span>dess</span>erts</p>
+                    <!--les differents desserts-->
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Paris-Brest</h3>
+                            <div class="menu__detail">
+                                <p>Revisité</p>
+                                <p class="menu__prix">18£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Macaron au chocolat d'exception</h3>
+                            <div class="menu__detail">
+                                <p>Et glace à la vanille de Madagascar</p>
+                                <p class="menu__prix">22£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+
+                    <article class="menu__diner">
+                        <div class="menu__ingredient">
+                            <h3 class="menu__nom">Mousse au chocolat </h3>
+                            <div class="menu__detail">
+                                <p>Au piment d'Espelette et à la truffe noire</p>
+                                <p class="menu__prix">23£</p>
+                            </div>
+                        </div>
+                        <i class="fas fa-check menu__valide"></i>
+                    </article>
+                </section>
+                <button class="menu__bouton menu__bouton--commande">Commander</button>
+            </div>   
+        </main>
+        <!--Pied de page du site-->
+        <footer class="pied-de-page">
+            <h2 class="pied-de-page__titre">ohmyfood</h2>
+            <nav>
+                <ul class="pied-de-page__navigation">
+                    <li class="pied-de-page__lien"><a href="#"><i class="fas fa-utensils pied-de-page__fourchette"></i>Propososer un restaurant</a></li>
+                    <li class="pied-de-page__lien"><a href="#"><i class="fas fa-hands-helping pied-de-page__partenaire"></i>Devenir partenaire</a></li>
+                    <li class="pied-de-page__lien"><a href="#">Mentions légales</a></li>
+                    <li class="pied-de-page__lien"><a href="mailto:dioubateamadou11@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>  
+    </body>
+</html>
