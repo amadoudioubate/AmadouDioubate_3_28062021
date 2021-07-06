@@ -26,30 +26,12 @@
         color: $couleur-blanc;
         font-weight: unset;
         font-size: 1.1rem;
-        @include tablette{
-            font-size: 1.2rem;
-        }
-        @include desktop{
-            font-size: 1.3rem;
-        }
-        @include plusGrandEcran{
-            font-size: 1.4rem;
-        }
     }
     &__lien{
         margin-bottom: 5px;
         & a{
             color:$couleur-blanc;
             font-size: .9rem;
-            @include tablette{
-                font-size: 1rem
-            }
-            @include desktop{
-                font-size: 1.1rem;
-            }
-            @include plusGrandEcran{
-                font-size: 1.2rem;
-            }
         }
     }
     &__icone{
@@ -57,27 +39,9 @@
         &--fourchette{
             font-size: .8rem;
             padding-right: 2px;
-            @include tablette{
-                font-size: 1rem;
-            }
-            @include desktop{
-                font-size: 1.1rem;
-            }
-            @include plusGrandEcran{
-                font-size: 1.2rem;
-            }
         }
         &--partenaire{
             font-size: .7rem;
-            @include tablette{
-                font-size: 1rem;
-            }
-            @include desktop{
-                font-size: 1.1rem;
-            }
-            @include plusGrandEcran{
-                font-size: 1.2rem;
-            }
         }
     }
 }

@@ -391,42 +391,12 @@ a {
   font-weight: unset;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .pied-de-page__titre {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .pied-de-page__titre {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .pied-de-page__titre {
-    font-size: 1.4rem;
-  }
-}
 .pied-de-page__lien {
   margin-bottom: 5px;
 }
 .pied-de-page__lien a {
   color: #fff;
   font-size: 0.9rem;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .pied-de-page__lien a {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .pied-de-page__lien a {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .pied-de-page__lien a {
-    font-size: 1.2rem;
-  }
 }
 .pied-de-page__icone {
   margin-right: 10px;
@@ -435,38 +405,8 @@ a {
   font-size: 0.8rem;
   padding-right: 2px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .pied-de-page__icone--fourchette {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .pied-de-page__icone--fourchette {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .pied-de-page__icone--fourchette {
-    font-size: 1.2rem;
-  }
-}
 .pied-de-page__icone--partenaire {
   font-size: 0.7rem;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .pied-de-page__icone--partenaire {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .pied-de-page__icone--partenaire {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .pied-de-page__icone--partenaire {
-    font-size: 1.2rem;
-  }
 }
 
 /*---------------------------------------------*/
