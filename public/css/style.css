@@ -442,16 +442,55 @@ a {
 .menu__legende {
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: unset;
 }
 .menu__legende span {
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 3px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu__ingredient {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .menu__ingredient {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__ingredient {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .menu__diner {
   background: #fff;
   border-radius: 19px;
   padding: 10px 10px 0px 10px;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menu__diner {
+    flex-basis: 48%;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .menu__diner {
+    flex-basis: 30%;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__diner {
+    flex-basis: 31%;
+    margin-right: 20px;
+  }
 }
 .menu__nom {
   margin-top: 0;
