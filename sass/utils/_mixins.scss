@@ -22,8 +22,38 @@
 }
 @mixin espaceEntreElement {
     display: flex;
+    justify-content: space-between;
+}
+@mixin espaceEntreElementCentrerV {
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
+$pointDeruptures:(
+    tabletteDebut:768px,
+    tabletteFin:991px,
+    desktopDebut:992px,
+    desktopFin:1199px,
+    plusGrand:1200px
+);
+
+@mixin tablette {
+    @media screen and (min-width:map-get($pointDeruptures,tabletteDebut)) and 
+                      (max-width:map-get($pointDeruptures,tabletteFin)) {
+        @content;                      
+    }
+}
+@mixin desktop {
+    @media screen and (min-width:map-get($pointDeruptures,desktopDebut)) and 
+                      (max-width:map-get($pointDeruptures,desktopFin)) {
+        @content;                      
+    }
+}
+@mixin plusGrandEcran {
+    @media screen and (min-width:map-get($pointDeruptures,plusGrand)){
+        @content;
+    }
+}
     

@@ -8,11 +8,17 @@
     &__titre{
         margin-bottom: 20px;
     }
+    &__gastronomique{
+        @include tablette{
+            display: flex;
+            flex-wrap: wrap;
+        } 
+    }
     &__carte{
         background: white;
         position: relative;
         margin-bottom: 20px;
-        @include bordureArrondie;
+        @include bordureArrondie;  
     }
     &__image{
         width: 100%;
@@ -34,8 +40,8 @@
         @include centrer;
     }   
     &__menu{
-        @include espaceEntreElement;
-        justify-content: space-between;
+        @include espaceEntreElementCentrerV;
+        /*justify-content: space-between;*/
         padding-left: 10px;
         padding-right: 20px;
     } 

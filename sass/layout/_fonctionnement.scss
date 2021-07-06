@@ -5,6 +5,12 @@
     padding: 40px 20px;
     font-size: $taille-titre-section;
     background-color: $couleur-blanc;
+    &__bloc{
+        @include tablette{
+            @include espaceEntreElement;
+            flex-wrap: wrap;
+        }    
+    }
     &__contenu{
         position: relative;
         margin-bottom: 20px;
@@ -14,6 +20,9 @@
         @include ombre;
         @include bordureArrondie;
         @include centrerV;
+        @include tablette{
+            flex-basis: 48%;
+        }  
     }
     &__numero{
         position: absolute;

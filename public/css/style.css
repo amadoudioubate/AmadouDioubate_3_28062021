@@ -122,6 +122,13 @@ a {
   font-size: 1.2rem;
   background-color: #fff;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .fonctionnement__bloc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 .fonctionnement__contenu {
   position: relative;
   margin-bottom: 20px;
@@ -132,6 +139,11 @@ a {
   border-radius: 19px;
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .fonctionnement__contenu {
+    flex-basis: 48%;
+  }
 }
 .fonctionnement__numero {
   position: absolute;
@@ -181,6 +193,12 @@ a {
 .restaurant__titre {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurant__gastronomique {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .restaurant__carte {
   background: white;
   position: relative;
@@ -212,7 +230,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   padding-left: 10px;
   padding-right: 20px;
 }
@@ -238,6 +256,12 @@ a {
 .pied-de-page {
   padding: 20px;
   background-color: #353535;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .pied-de-page__titre {
   color: #fff;

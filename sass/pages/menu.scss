@@ -19,7 +19,7 @@
     border-radius: 50px 50px 0 0;
     padding: 5px 10px 40px 10px;
     &__gastronomique{
-        @include espaceEntreElement;
+        @include espaceEntreElementCentrerV;
         & i{
             padding-right: 20px;
         }
@@ -47,8 +47,7 @@
         font-size: 1rem;
     }
     &__detail{
-        display: flex;
-        justify-content: space-between;
+        @include espaceEntreElement;
         & p{
             margin-top: 10px;
             font-size: 0.8rem;

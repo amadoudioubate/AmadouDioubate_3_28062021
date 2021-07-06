@@ -4,6 +4,11 @@
 .pied-de-page{
     padding: 20px;
     background-color: $couleur-pied-de-page;
+    &__navigation{
+        @include tablette{
+            @include espaceEntreElement;
+        }
+    }
     &__titre{
         color: $couleur-blanc;
         font-weight: unset;
