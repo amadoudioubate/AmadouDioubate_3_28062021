@@ -9,7 +9,15 @@
         @include tablette{
             @include espaceEntreElement;
             flex-wrap: wrap;
-        }    
+        }  
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+        } 
+        @include plusGrandEcran{
+            @include espaceEntreElement;
+            flex-wrap: wrap;
+        }  
     }
     &__contenu{
         position: relative;
@@ -22,7 +30,15 @@
         @include centrerV;
         @include tablette{
             flex-basis: 48%;
-        }  
+        } 
+        @include desktop{
+            flex-basis: 30%;
+            margin-right: 18px;
+        } 
+        @include plusGrandEcran{
+            flex-basis: 30%;
+            margin-right: 21px;
+        }
     }
     &__numero{
         position: absolute;
@@ -35,6 +51,9 @@
         font-size: 0.8rem;
         @include centrer;
         @include cercle;
+        @include plusGrandEcran{
+            font-size: 1rem
+        }
     } 
     &__icone{
         @include centrerV;
@@ -42,6 +61,9 @@
         margin-right: 5px;
         font-size: $taille-contenu-icone;
         width: 30px;
+        @include plusGrandEcran{
+            font-size: $taille-contenu-icone-grand-ecran;
+        }
         &--bleu{
             color: $couleur-principale;
         }
@@ -52,11 +74,8 @@
     &__possibilite{
         font-weight: 900;
         font-size: $taille-contenu-texte;
+        @include plusGrandEcran{
+            font-size: $taille-contenu-texte-grand-ecran;
+        }
     }  
 }
-
-
-/*.modi::before{
-    width: 10px;
-    height: 16px;
-}*/

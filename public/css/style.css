@@ -17,6 +17,11 @@ h1 {
   margin: 0;
 }
 
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
 /*h1,h2,h3,h4{
     font-weight: unset;
 }*/
@@ -38,6 +43,20 @@ a {
   color: #000;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .conteneur {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteneur {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+}
+
 /*---------------------------------------*/
 /*==       EN TETE (HEADER)              */
 /*---------------------------------------*/
@@ -47,6 +66,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .en-tete {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .en-tete {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
 }
 .en-tete__logo {
   font-size: 2rem;
@@ -129,6 +161,19 @@ a {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .fonctionnement__bloc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fonctionnement__bloc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 .fonctionnement__contenu {
   position: relative;
   margin-bottom: 20px;
@@ -145,6 +190,18 @@ a {
     flex-basis: 48%;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .fonctionnement__contenu {
+    flex-basis: 30%;
+    margin-right: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fonctionnement__contenu {
+    flex-basis: 30%;
+    margin-right: 21px;
+  }
+}
 .fonctionnement__numero {
   position: absolute;
   left: -12px;
@@ -159,6 +216,11 @@ a {
   align-items: center;
   border-radius: 50%;
 }
+@media screen and (min-width: 1200px) {
+  .fonctionnement__numero {
+    font-size: 1rem;
+  }
+}
 .fonctionnement__icone {
   display: flex;
   align-items: center;
@@ -166,6 +228,11 @@ a {
   margin-right: 5px;
   font-size: 1.1rem;
   width: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .fonctionnement__icone {
+    font-size: 1.2rem;
+  }
 }
 .fonctionnement__icone--bleu {
   color: #9356dc;
@@ -177,11 +244,12 @@ a {
   font-weight: 900;
   font-size: 1rem;
 }
+@media screen and (min-width: 1200px) {
+  .fonctionnement__possibilite {
+    font-size: 1.1rem;
+  }
+}
 
-/*.modi::before{
-    width: 10px;
-    height: 16px;
-}*/
 /*----------------------------------------------------------*/
 /*==       SECTION MENU RESTAURANT (RESTAURANT)             */
 /*----------------------------------------------------------*/
@@ -197,6 +265,21 @@ a {
   .restaurant__gastronomique {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .restaurant__gastronomique {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurant__gastronomique {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 .restaurant__carte {
@@ -204,6 +287,21 @@ a {
   position: relative;
   margin-bottom: 20px;
   border-radius: 19px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurant__carte {
+    flex-basis: 48%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .restaurant__carte {
+    flex-basis: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurant__carte {
+    flex-basis: 24%;
+  }
 }
 .restaurant__image {
   width: 100%;
@@ -257,7 +355,32 @@ a {
   padding: 20px;
   background-color: #353535;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
   .pied-de-page__navigation {
     display: flex;
     justify-content: space-between;
@@ -268,12 +391,42 @@ a {
   font-weight: unset;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__titre {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__titre {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page__titre {
+    font-size: 1.4rem;
+  }
+}
 .pied-de-page__lien {
   margin-bottom: 5px;
 }
 .pied-de-page__lien a {
   color: #fff;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__lien a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__lien a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page__lien a {
+    font-size: 1.2rem;
+  }
 }
 .pied-de-page__icone {
   margin-right: 10px;
@@ -282,8 +435,38 @@ a {
   font-size: 0.8rem;
   padding-right: 2px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__icone--fourchette {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__icone--fourchette {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page__icone--fourchette {
+    font-size: 1.2rem;
+  }
+}
 .pied-de-page__icone--partenaire {
   font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__icone--partenaire {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__icone--partenaire {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page__icone--partenaire {
+    font-size: 1.2rem;
+  }
 }
 
 /*---------------------------------------------*/

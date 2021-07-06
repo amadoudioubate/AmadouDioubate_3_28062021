@@ -12,13 +12,34 @@
         @include tablette{
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-around;
         } 
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        } 
+        @include plusGrandEcran{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     }
     &__carte{
         background: white;
         position: relative;
         margin-bottom: 20px;
-        @include bordureArrondie;  
+        @include bordureArrondie; 
+        @include tablette{
+            flex-basis: 48%;
+        }  
+        @include desktop{
+            flex-basis: 48%;
+        }
+        @include plusGrandEcran{
+            flex-basis: 24%;
+        }
+        
     }
     &__image{
         width: 100%;

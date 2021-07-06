@@ -30,6 +30,12 @@
     justify-content: space-between;
 }
 
+@mixin conteneur {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
 
 $pointDeruptures:(
     tabletteDebut:768px,

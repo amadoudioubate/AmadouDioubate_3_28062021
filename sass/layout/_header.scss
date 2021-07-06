@@ -5,6 +5,13 @@
     background-color: $couleur-blanc;
     height: 60px;
     @include centrer;
+    @include desktop{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include plusGrandEcran{
+        @include conteneur;
+    }
     &__logo{
         font-size: 2rem;
         font-weight: unset;

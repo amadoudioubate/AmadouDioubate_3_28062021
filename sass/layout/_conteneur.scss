@@ -1,0 +1,9 @@
+.conteneur{
+    @include desktop{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include plusGrandEcran{
+        @include conteneur;
+    }
+}
