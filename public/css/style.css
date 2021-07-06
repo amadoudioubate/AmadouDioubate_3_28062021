@@ -102,16 +102,16 @@ a {
   margin-top: 0;
 }
 .presentation__bouton {
-  height: 45px;
+  height: 40px;
   border-radius: 25px;
   background: linear-gradient(#ff79da, #9356dc);
   color: #fff;
   border: none;
+  font-size: 0.9rem;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 15px;
   margin-bottom: 30px;
-  font-size: 0.9rem;
 }
 
 /*----------------------------------------------------------*/
@@ -200,7 +200,7 @@ a {
   top: 10px;
   width: 80px;
   height: 30px;
-  background: #9aaca7;
+  background: #99e2d0;
   font-size: 0.9rem;
   font-weight: 900;
   color: green;
@@ -281,10 +281,93 @@ a {
   border-radius: 50px 50px 0 0;
   padding: 5px 10px 40px 10px;
 }
-.menu__nom {
+.menu__gastronomique {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.menu__gastronomique i {
+  padding-right: 20px;
+}
+.menu__composition {
+  margin-bottom: 35px;
+}
+.menu__legende {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.menu__legende span {
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 3px;
+}
+.menu__diner {
+  background: #fff;
+  border-radius: 19px;
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 15px;
+}
+.menu__nom {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.menu__detail {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__detail p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.menu__prix {
+  font-weight: 900;
+}
+.menu__commande {
+  display: flex;
+  justify-content: center;
+}
+.menu__bouton {
+  height: 40px;
+  border-radius: 25px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 150px;
+}
+
+/*--------------------------------------------*/
+/*==       PIED DE PAGE (FOOTER)              */
+/*--------------------------------------------*/
+.pied-de-page {
+  padding: 20px;
+  background-color: #353535;
+}
+.pied-de-page__titre {
+  color: #fff;
+  font-weight: unset;
+  font-size: 1.1rem;
+}
+.pied-de-page__lien {
+  margin-bottom: 5px;
+}
+.pied-de-page__lien a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.pied-de-page__icone {
+  margin-right: 10px;
+}
+.pied-de-page__icone--fourchette {
+  font-size: 0.8rem;
+  padding-right: 2px;
+}
+.pied-de-page__icone--partenaire {
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

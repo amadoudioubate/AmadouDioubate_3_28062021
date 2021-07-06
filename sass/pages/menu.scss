@@ -18,9 +18,57 @@
     background-color: $couleur-fond;
     border-radius: 50px 50px 0 0;
     padding: 5px 10px 40px 10px;
-    &__nom{
+    &__gastronomique{
         @include espaceEntreElement;
+        & i{
+            padding-right: 20px;
+        }
     }
+    &__composition{
+        margin-bottom: 35px;
+    }
+    &__legende{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        & span{
+            border-bottom: 3px solid$couleur-tertiaire;
+            padding-bottom: 3px;
+        }
+    }
+    &__diner{
+        background: $couleur-blanc;
+        @include bordureArrondie;
+        padding: 10px 10px 0px 10px;
+        margin-bottom: 15px;
+    }
+    &__nom{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+    &__detail{
+        display: flex;
+        justify-content: space-between;
+        & p{
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+    }
+    &__prix{
+        font-weight: 900;
+    }
+    &__commande{
+        @include centrerH;
+    }
+    &__bouton{
+        @include bouton;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        width: 150px;
+    }
+    
 }
 /*--------------------------------------------*/
 /*==       PIED DE PAGE (FOOTER)              */

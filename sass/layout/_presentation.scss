@@ -18,15 +18,10 @@
         margin-top: 0;
     }
     &__bouton{
-        height: 45px;
-        border-radius: 25px;
-        background: linear-gradient($couleur-secondaire,$couleur-principale);
-        color: $couleur-blanc;
-        border:none;
+        @include bouton;
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 15px;
         margin-bottom: 30px;
-        font-size: .9rem;
     }
 }
