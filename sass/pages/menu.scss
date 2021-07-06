@@ -9,10 +9,13 @@
     }
 }
 //image principale
-.image img{
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
+.image{
+    position: relative;
+    & img{
+        max-height: 390px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 .menu{
     background-color: $couleur-fond;
@@ -22,6 +25,7 @@
         @include espaceEntreElementCentrerV;
         & i{
             padding-right: 20px;
+            font-size: 1.3rem;
         }
     }
     &__recettes{
