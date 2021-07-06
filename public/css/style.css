@@ -417,7 +417,7 @@ a {
   text-align: center;
 }
 
-.image {
+.image img {
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -435,6 +435,9 @@ a {
 }
 .menu__gastronomique i {
   padding-right: 20px;
+}
+.menu__recettes {
+  font-weight: unset;
 }
 .menu__composition {
   margin-bottom: 35px;
