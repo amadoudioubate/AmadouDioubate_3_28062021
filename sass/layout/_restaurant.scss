@@ -10,19 +10,13 @@
     }
     &__gastronomique{
         @include tablette{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            @include espaceEntreElementAroundWrap;
         } 
         @include desktop{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            @include espaceEntreElementAroundWrap;
         } 
         @include plusGrandEcran{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            @include espaceEntreElementAroundWrap;
         }
     }
     &__carte{
@@ -30,6 +24,7 @@
         position: relative;
         margin-bottom: 20px;
         @include bordureArrondie; 
+        @include ombre;
         @include tablette{
             flex-basis: 48%;
         }  
@@ -38,8 +33,7 @@
         }
         @include plusGrandEcran{
             flex-basis: 24%;
-        }
-        
+        }   
     }
     &__image{
         width: 100%;
@@ -62,7 +56,6 @@
     }   
     &__menu{
         @include espaceEntreElementCentrerV;
-        /*justify-content: space-between;*/
         padding-left: 10px;
         padding-right: 20px;
     } 

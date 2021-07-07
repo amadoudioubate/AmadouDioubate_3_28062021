@@ -7,16 +7,13 @@
     background-color: $couleur-blanc;
     &__bloc{
         @include tablette{
-            @include espaceEntreElement;
-            flex-wrap: wrap;
+            @include espaceEntreElementWrap;
         }  
         @include desktop{
-            display: flex;
-            flex-wrap: wrap;
+            @include espaceEntreElementWrap
         } 
         @include plusGrandEcran{
-            @include espaceEntreElement;
-            flex-wrap: wrap;
+            @include espaceEntreElementWrap;
         }  
     }
     &__contenu{
@@ -32,12 +29,12 @@
             flex-basis: 48%;
         } 
         @include desktop{
-            flex-basis: 30%;
-            margin-right: 18px;
+            flex-basis: 31%;
+            /*margin-right: 18px;*/
         } 
         @include plusGrandEcran{
-            flex-basis: 30%;
-            margin-right: 21px;
+            flex-basis: 31%;
+            /*margin-right: 21px;*/
         }
     }
     &__numero{
