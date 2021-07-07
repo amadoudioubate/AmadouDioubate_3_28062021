@@ -5,11 +5,11 @@
     padding: 20px;
     background-color: $couleur-pied-de-page;
     @include desktop{
-        width: 90%;
-        margin: 0 auto;
+        @include conteneur;
     }
     @include plusGrandEcran{
         @include conteneur;
+        max-width: 1400px;
     }
     &__navigation{
         @include tablette{

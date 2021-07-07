@@ -29,6 +29,11 @@
     align-items: center;
     justify-content: space-between;
 }
+@mixin espaceEntreElementWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 @mixin conteneur {
     width: 90%;
