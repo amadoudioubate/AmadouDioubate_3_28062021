@@ -4,58 +4,60 @@
 }*/
 .chargement {
   height: 100%;
-  background: #000;
-  -webkit-animation: tourner 2s linear;
-  -o-animation: tourner 2s linear;
-  animation: tourner 2s linear;
+  background: #fff;
+  -webkit-animation: tourner 2.5s linear;
+  -o-animation: tourner 2.5s linear;
+  animation: tourner 2.5s linear;
   margin: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 30;
+  z-index: 1000;
   visibility: hidden;
 }
 .chargement__bordure {
   border: 16px solid #f6f6f6;
   border-top: 16px solid #9356dc;
   /* couleur principale  */
-  border-bottom: 16px solid #ff79da;
-  /* couleur secondaire */
+  border-bottom: 16px solid #9356dc;
+  /* couleur principale */
+  border-right: 16px solid #9356dc;
+  /* couleur principale */
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  -webkit-animation: bordure 500ms linear;
-  -o-animation: bordure 500ms linear;
-  animation: bordure 500ms linear;
+  -webkit-animation: bordure 2.5s linear;
+  -o-animation: bordure 2.5s linear;
+  animation: bordure 2.5s linear;
   margin: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 900;
   visibility: hidden;
 }
 
-@-webkit-keyframes tourner {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
+/*@-webkit-keyframes tourner {
+    0% { 
+        -webkit-transform: rotate(0deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(360deg); 
+    }
+}*/
 @keyframes tourner {
   0% {
     visibility: visible;
     /*transform: rotate(0deg); */
-    opacity: 0.9;
+    opacity: 1;
   }
-  75% {
-    opacity: 0.9;
-  }
+  /* 75%{
+       opacity: 1; 
+   }*/
   100% {
     /*transform: rotate(360deg); */
     visibility: hidden;
@@ -68,9 +70,9 @@
     transform: rotate(0deg);
     opacity: 1;
   }
-  75% {
-    opacity: 1;
-  }
+  /*75%{
+      opacity: 1; 
+  }*/
   100% {
     transform: rotate(360deg);
     visibility: hidden;
@@ -456,11 +458,12 @@ a {
   right: 10px;
   opacity: 0.7;
   cursor: pointer;
-  transition: opacity 200ms cubic-zebier(0.3, 0.7, 0.4, 1.5);
+  transition: all 200ms cubic-zebier(0.3, 0.7, 0.4, 1.5) 0s;
 }
-.restaurant__coeur:active {
+.restaurant__coeur:hover {
   color: #ff79da;
   opacity: 1;
+  font-weight: 900;
 }
 
 /*--------------------------------------------*/
@@ -551,13 +554,25 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.menu__gastronomique i {
-  padding-right: 20px;
-  font-size: 1.3rem;
+  /*& i{
+      padding-right: 20px;
+      font-size: 1.3rem;
+  }*/
 }
 .menu__recettes {
   font-weight: unset;
+}
+.menu__coeur {
+  padding-right: 20px;
+  font-size: 1.3rem;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 200ms cubic-zebier(0.3, 0.7, 0.4, 1.5) 0s;
+}
+.menu__coeur:hover {
+  color: #ff79da;
+  opacity: 1;
+  font-weight: 900;
 }
 .menu__composition {
   margin-bottom: 35px;

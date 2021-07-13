@@ -1,56 +1,57 @@
 
 .chargement{
     height: 100%;
-    background: $couleur-noir;
-    -webkit-animation: tourner 2s linear;
-    -o-animation: tourner 2s linear;
-    animation: tourner 2s linear;
+    background: $couleur-blanc;
+    -webkit-animation: tourner 2.5s linear;
+    -o-animation: tourner 2.5s linear;
+    animation: tourner 2.5s linear;
     margin: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 30;
+    z-index: 1000;
     visibility: hidden;
     &__bordure{
         border: 16px solid #f6f6f6;
         border-top: 16px solid $couleur-principale; /* couleur principale  */
-        border-bottom: 16px solid $couleur-secondaire; /* couleur secondaire */
+        border-bottom: 16px solid $couleur-principale; /* couleur principale */
+        border-right: 16px solid $couleur-principale; /* couleur principale */
         border-radius: 50%;
         width: 120px;
         height: 120px;
-        -webkit-animation: bordure 500ms linear;
-        -o-animation: bordure 500ms linear;
-        animation: bordure 500ms linear;
+        -webkit-animation: bordure 2.5s linear;
+        -o-animation: bordure 2.5s linear;
+        animation: bordure 2.5s linear;
         margin: auto;
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 20;
+        z-index: 900;
         visibility: hidden;
     }
 }
-@-webkit-keyframes tourner {
+/*@-webkit-keyframes tourner {
     0% { 
         -webkit-transform: rotate(0deg); 
     }
     100% { 
         -webkit-transform: rotate(360deg); 
     }
-}
+}*/
 
 @keyframes tourner {
     0% { 
         visibility: visible;
         /*transform: rotate(0deg); */
-        opacity: 0.9;
+        opacity: 1;
     }
-    75%{
-        opacity: 0.9; 
-    }
+   /* 75%{
+        opacity: 1; 
+    }*/
     100% { 
         /*transform: rotate(360deg); */
         visibility: hidden;
@@ -64,9 +65,9 @@
         transform: rotate(0deg); 
         opacity: 1;
     }
-    75%{
+    /*75%{
         opacity: 1; 
-    }
+    }*/
     100% { 
         transform: rotate(360deg); 
         visibility: hidden;
