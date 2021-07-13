@@ -3,7 +3,7 @@
 /*----------------------------------------------------------*/
 .localisation{
    background: linear-gradient($couleur-fond,$couleur-ombre,$couleur-ombre,$couleur-ombre);
-   border-top: 5px solid $couleur-noir;
+   border-top: 3px solid $couleur-gris-clair;
    @include centrerH;
    &__affichage {
         @include centrer;

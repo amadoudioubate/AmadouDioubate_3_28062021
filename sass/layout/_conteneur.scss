@@ -1,4 +1,5 @@
 .conteneur{
+    background-color: $couleur-fond;
     @include desktop{
         @include conteneur;
     }

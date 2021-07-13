@@ -40,6 +40,11 @@
     flex-wrap: wrap;
 }
 
+/*@mixin animationBoutonsPrinciaux {
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px 3px $couleur-pied-de-page;
+}*/
+
 @mixin conteneur {
     width: 90%;
     margin: 0 auto;

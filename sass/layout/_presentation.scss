@@ -23,5 +23,10 @@
         padding-right: 20px;
         margin-top: 15px;
         margin-bottom: 30px;
+        cursor: pointer;
+        &:hover{
+           transform: translateY(2px);
+           box-shadow: 0 0 10px 5px darken($couleur-gris-clair,30);
+        }
     }
 }

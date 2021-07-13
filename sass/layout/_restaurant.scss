@@ -55,12 +55,14 @@
         @include centrer;
     }   
     &__menu{
-        @include espaceEntreElementCentrerV;
+        /*@include espaceEntreElementCentrerV;*/
         padding-left: 10px;
         padding-right: 20px;
     } 
     &__plat{
         font-size: 1rem;
+        padding-left: 10px;
+        padding-bottom: 2px;
         & h4{
             margin-top: 5px;
             margin-bottom: 5px;
@@ -73,6 +75,10 @@
     &__coeur{
         font-size: 1.3rem;
         height: 40px;
+        position: absolute;
+        top: 175px;
+        right: 10px;
+        opacity: .7;
     }
 }
 

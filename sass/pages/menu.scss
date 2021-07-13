@@ -22,13 +22,10 @@
     border-radius: 50px 50px 0 0;
     background-color: $couleur-fond;
     padding: 5px 10px 40px 10px;
-    transform: translateY(-5%);
-    @include desktop{
-        transform: translateY(-10%);
-    }
-    @include plusGrandEcran{
-        transform: translateY(-10%);
-    }
+    position: relative;
+    top:-50px;
+    left: 0;
+    right: 0;
     &__gastronomique{
         @include espaceEntreElementCentrerV;
         & i{
@@ -109,6 +106,10 @@
         margin-top: 15px;
         margin-bottom: 30px;
         width: 150px;
+        &:hover{
+            transform: translateY(2px);
+            box-shadow: 0 0 10px 5px darken($couleur-gris-clair,30);
+         }
         @include plusGrandEcran{
             font-size: 1.2rem;
             width: 180px;
