@@ -1,17 +1,18 @@
 
 .chargement{
     height: 100%;
-    background: $couleur-blanc;
-    -webkit-animation: tourner 2.5s linear;
-    -o-animation: tourner 2.5s linear;
-    animation: tourner 2.5s linear;
-    margin: auto;
+    background: $couleur-noir;
+    -webkit-animation: tourner 7s linear;
+    -o-animation: tourner 7s linear;
+    animation: tourner 7s linear;
+    /*margin: auto;*/
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    @include centrer;
     visibility: hidden;
     &__bordure{
         border: 16px solid #f6f6f6;
@@ -21,16 +22,16 @@
         border-radius: 50%;
         width: 120px;
         height: 120px;
-        -webkit-animation: bordure 2.5s linear;
-        -o-animation: bordure 2.5s linear;
-        animation: bordure 2.5s linear;
-        margin: auto;
+        -webkit-animation: bordure 7s linear;
+        -o-animation: bordure 7s linear;
+        animation: bordure 7s linear;
+        /*margin: auto;
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 900;
+        z-index: 900;*/
         visibility: hidden;
     }
 }
@@ -46,14 +47,12 @@
 @keyframes tourner {
     0% { 
         visibility: visible;
-        /*transform: rotate(0deg); */
         opacity: 1;
     }
-   /* 75%{
-        opacity: 1; 
-    }*/
+    75%{
+        opacity: 0.5; 
+    }
     100% { 
-        /*transform: rotate(360deg); */
         visibility: hidden;
         opacity: 0;
     }

@@ -18,29 +18,40 @@
     }
     &__contenu{
         position: relative;
+        z-index: 60;
         margin-bottom: 20px;
         margin-left: 10px;
         background-color: $couleur-fond;
         height: 60px;
-        transition: transform 200ms cubic-zebier(0.3,0.7,0.4,1.5),background-color 500ms; 
+        opacity: 0.8;
+        transition: transform 200ms $temporisation 150ms, opacity 350ms; 
         @include ombre;
         @include bordureArrondie;
         @include centrerV;
+        &:hover{
+            transform: translateY(2px);
+            opacity: 1;
+            background-color:#f2eafb;
+            @include ombreTransition;
+            & .fonctionnement__icone--fonce{
+                color: $couleur-principale;
+            }
+        }
+        /* Les tablettes */
         @include tablette{
             flex-basis: 48%;
         } 
+        /* Les desktop */
         @include desktop{
             flex-basis: 31%;
             /*margin-right: 18px;*/
         } 
+        /* Ecrans plus grand */
         @include plusGrandEcran{
             flex-basis: 31%;
             /*margin-right: 21px;*/
         }
-        &:hover{
-            transform: translateY(2px);
-            background-color: $couleur-blanc;
-        }
+        
     }
     &__numero{
         position: absolute;
@@ -66,9 +77,9 @@
         @include plusGrandEcran{
             font-size: $taille-contenu-icone-grand-ecran;
         }
-        &--bleu{
+        /*&--bleu{
             color: $couleur-principale;
-        }
+        }*/
         &--fonce{
             color: #858282;
         }

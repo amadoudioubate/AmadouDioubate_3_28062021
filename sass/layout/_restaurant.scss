@@ -9,12 +9,15 @@
         margin-bottom: 20px;
     }
     &__gastronomique{
+        //Tablettes
         @include tablette{
             @include espaceEntreElementAroundWrap;
         } 
+        //Desktop
         @include desktop{
             @include espaceEntreElementAroundWrap;
         } 
+        //Ecrans plus grand
         @include plusGrandEcran{
             @include espaceEntreElementAroundWrap;
         }
@@ -23,15 +26,18 @@
         background: white;
         position: relative;
         margin-bottom: 20px;
-        transition: transform 200ms cubic-zebier(0.3,0.7,0.4,1.5);
+        transition: transform 200ms $temporisation;
         @include bordureArrondie; 
         @include ombre;
+        //Tablettes
         @include tablette{
             flex-basis: 48%;
         }  
+        //Desktop
         @include desktop{
             flex-basis: 48%;
         }
+        //Ecran plus grand
         @include plusGrandEcran{
             flex-basis: 24%;
         } 
@@ -84,7 +90,7 @@
         right: 10px;
         opacity: .7;
         cursor: pointer;
-        transition:all 200ms cubic-zebier(0.3,0.7,0.4,1.5) 0s ;
+        transition:all 200ms $temporisation 0s ;
         &:hover{
             color: $couleur-secondaire;
             opacity: 1;

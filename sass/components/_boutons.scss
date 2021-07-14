@@ -5,6 +5,8 @@
     background: linear-gradient(180deg,$couleur-secondaire 0%,$couleur-principale 100%);
     color: $couleur-blanc;
     font-size: .9rem;
-    box-shadow: 0 0 10px 3px $couleur-gris-clair;
-    transition: transform 200ms cubic-zebier(0.3,0.7,0.4,1.5),box-shadow 500ms;
+    opacity: 0.8;
+    //box-shadow: 0 0 10px 3px $couleur-gris;
+    @include ombre;
+    transition: opacity 250ms $temporisation 80ms ,box-shadow 330ms;
 }

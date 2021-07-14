@@ -15,8 +15,10 @@ $couleur-pied-de-page:#353535;
 //couleur ombre (box shadow)
 $couleur-ombre:#eaeaea;
 //couleur gris clair
-$couleur-gris-clair:#d3d3d3;
+$couleur-gris:hsla(267,10%,32%,30%);
 
+//fontion temporisation
+$temporisation:cubic-bezier(0.3,0.7,0.4,1.5);
 
 //taille de titres sections fonctionnement et restaurants
 $taille-titre-section:1.2rem;
