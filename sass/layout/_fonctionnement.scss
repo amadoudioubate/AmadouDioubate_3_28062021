@@ -27,9 +27,9 @@
         transition: transform 200ms $temporisation 150ms, opacity 350ms; 
         @include ombre;
         @include bordureArrondie;
-        @include centrerV;
+        @include centrerVertical;
         &:hover{
-            transform: translateY(2px);
+            transform: translateY(1px);
             opacity: 1;
             background-color:#f2eafb;
             @include ombreTransition;
@@ -62,14 +62,14 @@
         background-color: $couleur-principale;
         color: $couleur-blanc;
         font-size: 0.8rem;
-        @include centrer;
+        @include centrerHorizontalVertical;
         @include cercle;
         @include plusGrandEcran{
             font-size: 1rem
         }
     } 
     &__icone{
-        @include centrerV;
+        @include centrerVertical;
         margin-left: 30px;
         margin-right: 5px;
         font-size: $taille-contenu-icone;

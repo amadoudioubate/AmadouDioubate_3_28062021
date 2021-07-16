@@ -4,6 +4,7 @@
 .pied-de-page{
     padding: 20px;
     background-color: $couleur-pied-de-page;
+    //width: 100%;
     @include desktop{
         @include conteneur;
     }

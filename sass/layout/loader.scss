@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    @include centrer;
+    @include centrerHorizontalVertical;
     visibility: hidden;
     &__bordure{
         border: 16px solid #f6f6f6;

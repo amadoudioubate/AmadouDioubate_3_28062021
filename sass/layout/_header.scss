@@ -4,7 +4,8 @@
 .en-tete{
     background-color: $couleur-blanc;
     height: 60px;
-    @include centrer;
+    //width: 100%;
+    @include centrerHorizontalVertical;
     @include desktop{
         @include conteneur;
     }

@@ -62,13 +62,13 @@
         font-size: .9rem;
         font-weight: 900;
         color: green;
-        @include centrer;
+        @include centrerHorizontalVertical;
     }   
-    &__menu{
-        /*@include espaceEntreElementCentrerV;*/
+    /*&__menu{
+        @include espaceEntreElementCentrerV;
         padding-left: 10px;
         padding-right: 20px;
-    } 
+    }*/
     &__plat{
         font-size: 1rem;
         padding-left: 10px;

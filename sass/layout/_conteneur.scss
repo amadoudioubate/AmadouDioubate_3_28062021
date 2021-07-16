@@ -1,5 +1,6 @@
 .conteneur{
     background-color: $couleur-fond;
+    //width: 100%;
     @include desktop{
         @include conteneur;
     }

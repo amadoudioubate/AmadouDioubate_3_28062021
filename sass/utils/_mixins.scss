@@ -1,9 +1,12 @@
+//Former une bordure arrondie
 @mixin bordureArrondie {
     border-radius: 19px;
 }
+//Former un cercle
 @mixin cercle {
     border-radius: 50%;
 }
+//Appliquer l'ombre sur la boite d'élement
 @mixin ombre{
     box-shadow: 0 0 10px 3px $couleur-ombre;
     //box-shadow: 0px 0px 12px 0px $couleur-ombre;
@@ -11,34 +14,40 @@
 @mixin ombreTransition {
     box-shadow: 0 0 10px 5px darken($couleur-gris,10);
 }
-
-@mixin centrer {
+//centrer horizontalement et verticalement
+@mixin centrerHorizontalVertical {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin centrerH {
+//Centrer horizontalement
+@mixin centrerHorizontal {
     display: flex;
     justify-content: center;
 }
-@mixin centrerV {
+//Centrer verticalement
+@mixin centrerVertical {
     display: flex;
     align-items: center;
 }
+// Espace entre les éléments
 @mixin espaceEntreElement {
     display: flex;
     justify-content: space-between;
 }
+//Espace entre les éléments puis les centrer verticalement
 @mixin espaceEntreElementCentrerV {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+//Espace entre les éléments puis appliquer wrap si plus d'espace
 @mixin espaceEntreElementWrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+//Espace egal entre les éléments puis appliquer wrap si plus d'espace
 @mixin espaceEntreElementAroundWrap {
     display: flex;
     justify-content: space-around;
@@ -49,13 +58,13 @@
     transform: scale(1.2); 
     box-shadow: 0 0 10px 3px $couleur-pied-de-page;
 }*/
-
+//Pour centrer le conteneur
 @mixin conteneur {
     width: 90%;
     margin: 0 auto;
 }
 
-
+//Ensemble des variables pour les points de reptures des différents écrans
 $pointDeruptures:(
     tabletteDebut:768px,
     tabletteFin:991px,
@@ -63,19 +72,21 @@ $pointDeruptures:(
     desktopFin:1199px,
     plusGrand:1200px
 );
-
+//Les tablettes
 @mixin tablette {
     @media screen and (min-width:map-get($pointDeruptures,tabletteDebut)) and 
                       (max-width:map-get($pointDeruptures,tabletteFin)) {
         @content;                      
     }
 }
+//Les desktop
 @mixin desktop {
     @media screen and (min-width:map-get($pointDeruptures,desktopDebut)) and 
                       (max-width:map-get($pointDeruptures,desktopFin)) {
         @content;                      
     }
 }
+//les écrans plus grand
 @mixin plusGrandEcran {
     @media screen and (min-width:map-get($pointDeruptures,plusGrand)){
         @content;

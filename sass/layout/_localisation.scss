@@ -4,15 +4,15 @@
 .localisation{
    background: linear-gradient($couleur-fond,$couleur-ombre,$couleur-ombre,$couleur-ombre);
    border-top: 3px solid $couleur-gris;
-   @include centrerH;
+   @include centrerHorizontal;
    &__affichage {
-        @include centrer;
+        @include centrerHorizontalVertical;
         height: 50px;
     }
     &__icone{
         height: 30px;
         width: 30px;
-        @include centrerV;
+        @include centrerVertical;
     }
     &__ville{
         height: 30px;
