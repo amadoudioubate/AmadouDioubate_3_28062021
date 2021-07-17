@@ -609,6 +609,13 @@ a {
   margin-bottom: 20px;
   font-weight: unset;
 }
+.menu__legende::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 3px;
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .menu__ingredient {
     display: flex;
