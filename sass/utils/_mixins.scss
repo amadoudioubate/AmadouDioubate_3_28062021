@@ -11,6 +11,10 @@
     box-shadow: 0 0 10px 3px $couleur-ombre;
     //box-shadow: 0px 0px 12px 0px $couleur-ombre;
 }
+@mixin ombre2{
+    //box-shadow: 0 0 10px 3px $couleur-ombre;
+    box-shadow: 0px 0px 12px 0px $couleur-ombre;
+}
 @mixin ombreTransition {
     box-shadow: 0 0 10px 5px darken($couleur-gris,10);
 }

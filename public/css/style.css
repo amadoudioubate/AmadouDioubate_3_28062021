@@ -104,6 +104,7 @@ body {
   padding: 0;
   height: 100%;
   min-height: 100%;
+  max-width: 100%;
 }
 
 ul {
@@ -608,10 +609,6 @@ a {
   margin-bottom: 20px;
   font-weight: unset;
 }
-.menu__legende span {
-  border-bottom: 3px solid #99e2d0;
-  padding-bottom: 3px;
-}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .menu__ingredient {
     display: flex;
@@ -634,34 +631,27 @@ a {
   }
 }
 .menu__diner {
+  display: flex;
+  justify-content: space-between;
   background: #fff;
   padding: 10px 10px 0px 10px;
   margin-bottom: 15px;
   position: relative;
   z-index: 20;
   overflow: hidden;
-  box-shadow: 0 0 10px 3px #eaeaea;
+  box-shadow: 0px 0px 12px 0px #eaeaea;
   border-radius: 19px;
+  max-width: 100%;
 }
-.menu__diner:hover::after {
-  animation: valide 200ms 200ms both;
+.menu__diner:hover .menu__prix {
+  margin-right: 70px;
 }
-.menu__diner::after {
-  content: "";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  background-color: #99e2d0;
-  color: #fff;
-  position: absolute;
+.menu__diner:hover .menu__validation {
+  transform: scale(1);
   right: 0;
-  top: 0;
-  height: 100%;
-  transform: scale(0);
+}
+.menu__diner:hover .menu__validation::after {
+  transform: rotate(360deg);
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .menu__diner {
@@ -678,7 +668,13 @@ a {
     flex-basis: 32%;
   }
 }
-.menu__nom {
+.menu__detail {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__detail h4 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1rem;
@@ -687,17 +683,14 @@ a {
   white-space: nowrap;
 }
 @media screen and (min-width: 1200px) {
-  .menu__nom {
+  .menu__detail h4 {
     font-size: 1.1rem;
   }
 }
-.menu__detail {
-  display: flex;
-  justify-content: space-between;
-}
 .menu__detail p {
-  margin-top: 10px;
-  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -708,7 +701,48 @@ a {
   }
 }
 .menu__prix {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: margin-right 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+.menu__validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 60px;
+  height: 100%;
+  background: #99e2d0;
+  transform: scale(0);
+  transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5), right 500ms ease-in-out;
+}
+.menu__validation::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #99e2d0;
+  color: #fff;
+  transform: rotate(180deg);
+  width: 26px;
+  height: 26px;
+  transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  /* Avant essaitransform:rotate(0deg);
+  transition:transform 500ms $temporisation;*/
+  /*transform: rotate(0deg);
+  animation: rotation 350ms $temporisation 150ms;*/
 }
 .menu__commande {
   display: flex;
@@ -772,13 +806,21 @@ a {
   font-size: 0.7rem;
 }
 
-@keyframes valide {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(5);
-  }
-}
+/*@keyframes valide {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}*/
+/*@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}*/
 
 /*# sourceMappingURL=style.css.map */
