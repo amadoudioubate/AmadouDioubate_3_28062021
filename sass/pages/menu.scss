@@ -10,13 +10,12 @@
 }
 // Image associée au menu
 .image{
-    & img{
-        height: 300px;
+        max-height: 300px;
         width: 100%;
+        max-width: 100%;
         object-fit: cover;
     }
     
-}
 //menu gastronomique
 .menu{
     border-radius: 50px 50px 0 0;
@@ -80,9 +79,16 @@
         position: relative;
         z-index: 20;
         overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        //transform: scale(0);
+        animation: apparition-progressive 500ms $temporisation forwards;
+        //animation-delay: 1000ms;
+        @include animation;
         @include ombre2;
         @include bordureArrondie;
-        max-width: 100%;
+        //max-width: 100%;
+        
         &:hover{
             & .menu__prix{
                 margin-right: 70px;
@@ -172,11 +178,6 @@
             width: 26px;
             height: 26px;
             transition:transform 500ms $temporisation;
-            /* Avant essaitransform:rotate(0deg);
-            transition:transform 500ms $temporisation;*/
-            /*transform: rotate(0deg);
-            animation: rotation 350ms $temporisation 150ms;*/
-            //transition-duration: 400ms;
         }
     }
     &__commande{
@@ -200,6 +201,17 @@
         } 
     }
     
+}
+/*--------------------------------------------*/
+/*==       MENU PAGE (ANIMATION)              */
+/*--------------------------------------------*/
+@keyframes apparition-progressive {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 /*--------------------------------------------*/
 /*==       PIED DE PAGE (FOOTER)              */
@@ -231,19 +243,3 @@
     }
 }
 
-/*@keyframes valide {
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}*/
-/*@keyframes rotation {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(180deg);
-    }
-}*/

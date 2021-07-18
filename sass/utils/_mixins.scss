@@ -96,4 +96,21 @@ $pointDeruptures:(
         @content;
     }
 }
+
+//animation
+@mixin animation {
+    @for $i from 1 to 5 {
+        @if ($i<=3) {
+            &:nth-child(#{$i}){
+                animation-delay:$i * 250ms;
+            }   
+        }
+        @else{
+            &:nth-child(#{$i}){
+                animation-delay:$i+746ms;
+            }  
+        }
+        
+    }
+}
     
