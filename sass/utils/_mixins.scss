@@ -97,20 +97,12 @@ $pointDeruptures:(
     }
 }
 
-//animation
-@mixin animation {
+//animation menu page - apparition progressive
+@mixin apparition {
     @for $i from 1 to 5 {
-        @if ($i<=3) {
-            &:nth-child(#{$i}){
-                animation-delay:$i * 250ms;
-            }   
-        }
-        @else{
-            &:nth-child(#{$i}){
-                animation-delay:$i+746ms;
-            }  
-        }
-        
+        &:nth-child(#{$i}){
+            animation-delay:$i * 250ms;
+        }   
     }
 }
     

@@ -44,12 +44,10 @@
         /* Les desktop */
         @include desktop{
             flex-basis: 31%;
-            /*margin-right: 18px;*/
         } 
         /* Ecrans plus grand */
         @include plusGrandEcran{
             flex-basis: 31%;
-            /*margin-right: 21px;*/
         }
         
     }
@@ -77,9 +75,6 @@
         @include plusGrandEcran{
             font-size: $taille-contenu-icone-grand-ecran;
         }
-        /*&--bleu{
-            color: $couleur-principale;
-        }*/
         &--fonce{
             color: #858282;
         }

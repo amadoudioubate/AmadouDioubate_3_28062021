@@ -81,10 +81,8 @@
         overflow: hidden;
         cursor: pointer;
         opacity: 0;
-        //transform: scale(0);
         animation: apparition-progressive 500ms $temporisation forwards;
-        //animation-delay: 1000ms;
-        @include animation;
+        @include apparition;
         @include ombre2;
         @include bordureArrondie;
         //max-width: 100%;

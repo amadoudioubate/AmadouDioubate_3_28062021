@@ -2,8 +2,6 @@
 .chargement{
     height: 100%;
     background: $couleur-noir;
-    -webkit-animation: tourner 3s linear;
-    -o-animation: tourner 3s linear;
     animation: tourner 3s linear;
     /*margin: auto;*/
     position: fixed;
@@ -22,8 +20,6 @@
         border-radius: 50%;
         width: 120px;
         height: 120px;
-        -webkit-animation: bordure 3s linear;
-        -o-animation: bordure 3s linear;
         animation: bordure 3s linear;
         /*margin: auto;
         position: fixed;
@@ -35,14 +31,6 @@
         visibility: hidden;
     }
 }
-/*@-webkit-keyframes tourner {
-    0% { 
-        -webkit-transform: rotate(0deg); 
-    }
-    100% { 
-        -webkit-transform: rotate(360deg); 
-    }
-}*/
 
 @keyframes tourner {
     0% { 
