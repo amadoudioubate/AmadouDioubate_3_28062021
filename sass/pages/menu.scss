@@ -175,7 +175,7 @@
             transform: rotate(180deg);
             width: 26px;
             height: 26px;
-            transition:transform 500ms $temporisation;
+            transition:transform 500ms $temporisation 300ms;
         }
     }
     &__commande{

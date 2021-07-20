@@ -31,7 +31,7 @@
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: tourner 3s linear;
+  animation: tourner 7s linear;
   visibility: hidden;
 }
 
@@ -40,11 +40,11 @@
     visibility: visible;
     opacity: 1;
   }
-  50% {
-    opacity: 0.7;
-  }
+  /*50%{
+      opacity: 0.7; 
+  }*/
   70% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   100% {
     visibility: hidden;
@@ -54,7 +54,7 @@
 @keyframes tourner {
   0% {
     visibility: visible;
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     opacity: 1;
   }
   /*75%{
@@ -62,9 +62,11 @@
   }*/
   50% {
     opacity: 1;
+    transform: rotate(360deg);
   }
   70% {
     opacity: 1;
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0deg);
@@ -630,16 +632,16 @@ a {
   border-radius: 19px;
 }
 .menu__diner:nth-child(1) {
-  animation-delay: 250ms;
+  animation-delay: 800ms;
 }
 .menu__diner:nth-child(2) {
-  animation-delay: 500ms;
+  animation-delay: 1600ms;
 }
 .menu__diner:nth-child(3) {
-  animation-delay: 750ms;
+  animation-delay: 2400ms;
 }
 .menu__diner:nth-child(4) {
-  animation-delay: 1000ms;
+  animation-delay: 3200ms;
 }
 .menu__diner:hover .menu__prix {
   margin-right: 70px;
@@ -736,7 +738,7 @@ a {
   transform: rotate(180deg);
   width: 26px;
   height: 26px;
-  transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  transition: transform 500ms cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
 }
 .menu__commande {
   display: flex;

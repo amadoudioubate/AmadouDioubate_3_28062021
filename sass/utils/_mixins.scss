@@ -101,7 +101,7 @@ $pointDeruptures:(
 @mixin apparition {
     @for $i from 1 to 5 {
         &:nth-child(#{$i}){
-            animation-delay:$i * 250ms;
+            animation-delay:$i * 800ms;
         }   
     }
 }
