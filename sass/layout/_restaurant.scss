@@ -87,12 +87,14 @@
         right: 10px;
         opacity: .7;
         cursor: pointer;
+        transform-origin: bottom;
+        background: transparent;
         transition:opacity 200ms $temporisation;
         &:hover{
-            transform-origin: left;
-            color: $couleur-secondaire;
+            //background-color: linear-gradient($couleur-secondaire,$couleur-principale);
             opacity: 1;
             font-weight: 900;
+            color: $couleur-secondaire;
         }
     }
 }

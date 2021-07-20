@@ -2,7 +2,7 @@
 .chargement{
     height: 100%;
     background: $couleur-noir;
-    animation: tourner 3s linear;
+    animation: loader 3s linear;
     /*margin: auto;*/
     position: fixed;
     top: 0;
@@ -12,7 +12,8 @@
     z-index: 1000;
     @include centrerHorizontalVertical;
     visibility: hidden;
-    &__bordure{
+    &::after{
+        content: "";
         border: 16px solid #f6f6f6;
         border-top: 16px solid $couleur-principale; /* couleur principale  */
         border-bottom: 16px solid $couleur-principale; /* couleur principale */
@@ -20,19 +21,13 @@
         border-radius: 50%;
         width: 120px;
         height: 120px;
-        animation: bordure 3s linear;
-        /*margin: auto;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 900;*/
+        animation: tourner 3s linear;
         visibility: hidden;
     }
+    
 }
 
-@keyframes tourner {
+@keyframes loader {
     0% { 
         visibility: visible;
         opacity: 1;
@@ -49,7 +44,7 @@
     }
 }
 
-@keyframes bordure {
+@keyframes tourner {
     0% { 
         visibility: visible;
         transform: rotate(0deg); 
