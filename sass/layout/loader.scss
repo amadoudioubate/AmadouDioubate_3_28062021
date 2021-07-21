@@ -8,13 +8,13 @@
     right: 0;
     bottom: 0;
     min-height: 100vh;
-    z-index: 10000;
-    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
     @include centrerHorizontalVertical;
     animation: loader 3s linear;
     &::after{
         content: "";
-        display: block;
+        display: inline-block;
         height: 120px;
         width: 120px;
         border: 16px solid #f6f6f6;
@@ -26,15 +26,16 @@
         animation: tourne-bordure 3s linear;
     }
 }
+
 @keyframes loader {
     0%{
-        opacity: 1;
+        visibility: visible;
     }
     50%{
-        opacity: 1;
+        visibility: visible;
     }
     100%{
-        opacity: 0;
+        visibility: hidden;
     }
 }
 @keyframes tourne-bordure {

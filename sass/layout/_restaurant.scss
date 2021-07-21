@@ -25,6 +25,7 @@
     &__carte{
         background: white;
         position: relative;
+        z-index: 3;
         margin-bottom: 20px;
         transition: transform 200ms $temporisation;
         @include bordureArrondie; 
@@ -51,6 +52,7 @@
     &__legende{
         margin: 0;
         position: absolute;
+        z-index: 4;
         right: 10px;
         top: 10px;
         width: 80px;
@@ -61,11 +63,7 @@
         color: green;
         @include centrerHorizontalVertical;
     }   
-    /*&__menu{
-        @include espaceEntreElementCentrerV;
-        padding-left: 10px;
-        padding-right: 20px;
-    }*/
+
     &__plat{
         font-size: 1rem;
         padding-left: 10px;
@@ -83,6 +81,7 @@
         font-size: 1.3rem;
         height: 40px;
         position: absolute;
+        z-index: 5;
         top: 175px;
         right: 10px;
         opacity: .7;

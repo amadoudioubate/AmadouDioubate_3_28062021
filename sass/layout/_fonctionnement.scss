@@ -18,7 +18,7 @@
     }
     &__contenu{
         position: relative;
-        z-index: 60;
+        z-index: 1;
         margin-bottom: 20px;
         margin-left: 10px;
         background-color: $couleur-fond;
@@ -53,6 +53,7 @@
     }
     &__numero{
         position: absolute;
+        z-index: 2;
         left: -12px;
         top: 18px;
         height: 22px;
