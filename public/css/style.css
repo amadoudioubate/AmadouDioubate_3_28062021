@@ -4,73 +4,52 @@
     box-shadow: 0 0 10px 3px $couleur-pied-de-page;
 }*/
 .chargement {
-  height: 100%;
-  background: #000;
-  animation: loader 3s linear;
-  /*margin: auto;*/
   position: fixed;
-  top: 0;
-  bottom: 0;
+  background: #fff;
   left: 0;
+  top: 0;
   right: 0;
-  z-index: 1000;
+  bottom: 0;
+  min-height: 100vh;
+  z-index: 10000;
+  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
+  animation: loader 3s linear;
 }
 .chargement::after {
   content: "";
-  border: 16px solid #f6f6f6;
-  border-top: 16px solid #9356dc;
-  /* couleur principale  */
-  border-bottom: 16px solid #9356dc;
-  /* couleur principale */
-  border-right: 16px solid #9356dc;
-  /* couleur principale */
-  border-radius: 50%;
-  width: 120px;
+  display: block;
   height: 120px;
-  animation: tourner 7s linear;
-  visibility: hidden;
+  width: 120px;
+  border: 16px solid #f6f6f6;
+  border-top: 12px solid #9356dc;
+  border-right: 12px solid #ff79da;
+  border-bottom: 12px solid #99e2d0;
+  border-radius: 50%;
+  opacity: 0;
+  animation: tourne-bordure 3s linear;
 }
 
 @keyframes loader {
   0% {
-    visibility: visible;
     opacity: 1;
   }
-  /*50%{
-      opacity: 0.7; 
-  }*/
-  70% {
-    opacity: 0.7;
+  50% {
+    opacity: 1;
   }
   100% {
-    visibility: hidden;
     opacity: 0;
   }
 }
-@keyframes tourner {
+@keyframes tourne-bordure {
   0% {
-    visibility: visible;
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
     opacity: 1;
-  }
-  /*75%{
-      opacity: 1; 
-  }*/
-  50% {
-    opacity: 1;
-    transform: rotate(360deg);
-  }
-  70% {
-    opacity: 1;
-    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0deg);
-    visibility: hidden;
     opacity: 0;
   }
 }
@@ -80,15 +59,11 @@
 
 html {
   background: #fff;
-  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  min-height: 100%;
-  max-width: 100%;
 }
 
 ul {
@@ -136,13 +111,13 @@ a {
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .conteneur {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteneur {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 1400px;
   }
@@ -160,13 +135,13 @@ a {
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .en-tete {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .en-tete {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 1400px;
   }
@@ -484,13 +459,13 @@ a {
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .pied-de-page {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .pied-de-page {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     max-width: 1400px;
   }
