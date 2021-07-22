@@ -5,17 +5,50 @@
     padding: 10px 0px;
     background: $couleur-fond;
     text-align: center;
-    &__entreprise{
+    /*&__entreprise{
         width: 300px;
         margin: 0 auto;   
+    }*/
+    &__entreprise{
+        //Tablettes
+        @include tablette{
+            width: 90%;
+            margin: 0 auto;
+        }
+        //Desktop
+        @include desktop{
+            width: 90%;
+            margin: 0 auto;
+        }
+        //Les écrans plus larges
+        @include plusGrandEcran{
+            width: 90%;
+            margin: 0 auto;
+        }
+
     }
     &__titre{
         font-size: 1.7rem;
         margin-bottom: 15px;
+        @include tablette  {
+            font-size: 2rem;
+        }
     }
     &__restaurants{
         color:$couleur-pied-de-page;
         margin-top: 0;
+        //Tablettes
+        @include tablette {
+            font-size: 1.1rem;
+        }
+        //Desktop
+        @include desktop {
+            font-size: 1.2rem;
+        }
+        //Desktop
+        @include plusGrandEcran {
+            font-size: 1.2rem;
+        }
     }
     &__bouton{
         @include bouton;
@@ -28,6 +61,18 @@
            opacity: 1;
            @include ombreTransition;
            background: linear-gradient(180deg,$couleur-secondaire 10%,$couleur-principale 100%);
+        }
+        //Tablettes
+        @include tablette{
+            font-size: 1.1rem;
+        }
+        //Desktop
+        @include desktop{
+            font-size: 1.2rem;
+        }
+        //Les écrans plus larges
+        @include plusGrandEcran{
+            font-size: 1.2rem;
         }
     }
 }
