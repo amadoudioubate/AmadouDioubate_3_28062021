@@ -32,17 +32,37 @@
         font-weight: unset;
     }
     &__coeur{
-        padding-right: 20px;
-        font-size: 1.3rem;
-        opacity: .7;
-        cursor: pointer;
-        transition:all 200ms $temporisation 0s ;
-        &:hover{
-            color: $couleur-secondaire;
+        padding-right: 50px;
+        position: relative;
+        @include conteneur-coeur;
+        &:hover::before{
             opacity: 1;
-            font-weight: 900;
+        }
+        &::before{ 
+            @include conteneur-coeur-avant;
+        }
+        &:hover {
+            & .menu__aime {
+                &--pasdegra{
+                    opacity: 0;   
+                }
+                &--degra{
+                    opacity: 1;
+                    font-weight: 900;
+                }
+            }
         }
     }
+    &__aime {
+        background-color: $couleur-fond;
+        @include coeur;
+        &--pasDegra{
+            opacity: 0;
+        }
+        &--degra{
+            opacity: 1;
+        }
+    }    
     &__composition{
         margin-bottom: 35px;
     }

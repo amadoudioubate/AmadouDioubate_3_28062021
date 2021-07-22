@@ -106,3 +106,36 @@ $pointDeruptures:(
     }
 }
     
+//Conteneur des boutons j'aime sous forme de coeur
+@mixin conteneur-coeur {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    padding: 0;
+    cursor: pointer;
+    background-color: $couleur-noir;
+    @include centrerHorizontalVertical;
+}
+// Le contenu ajouté avec le pseudo classe before
+@mixin conteneur-coeur-avant {
+    content: "";
+    opacity: 0;
+    display: block;
+    transition: opacity 500ms $temporisation;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(0deg,$couleur-principale 0%,$couleur-secondaire 100%); 
+}
+//coeur icone awesome
+@mixin coeur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.8rem;
+    height: 100%;
+    width: 100%;
+    //transition-duration: 7s;
+    @include centrerHorizontalVertical;
+    mix-blend-mode: lighten;  
+}
