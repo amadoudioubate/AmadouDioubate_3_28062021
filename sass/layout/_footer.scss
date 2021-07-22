@@ -33,18 +33,29 @@
         & a{
             color:$couleur-blanc;
             font-size: .9rem;
-            &::after{
-                content: "";
-                display: block;
-                margin: 5px auto 0 auto;
-                width: 0px;
-                height: 2px;
-                border-radius: 2px;
-                background: #aaa;
-                transform: width 200ms $temporisation;
+            @include tablette{
+                &::after{
+                    @include survol-lienpd;
+                }
+                &:hover::after{
+                    @include taille-lienpd-survol;
+                }
             }
-            &:hover::after{
-                width: 100%;
+            @include desktop{
+                &::after{
+                    @include survol-lienpd;
+                }
+                &:hover::after{
+                    @include taille-lienpd-survol;
+                }
+            }
+            @include plusGrandEcran{
+                &::after{
+                    @include survol-lienpd;
+                }
+                &:hover::after{
+                    @include taille-lienpd-survol;
+                }
             }
         }
     }

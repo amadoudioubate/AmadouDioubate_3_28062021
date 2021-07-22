@@ -589,18 +589,50 @@ a {
   color: #fff;
   font-size: 0.9rem;
 }
-.pied-de-page__lien a::after {
-  content: "";
-  display: block;
-  margin: 5px auto 0 auto;
-  width: 0px;
-  height: 2px;
-  border-radius: 2px;
-  background: #aaa;
-  transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__lien a::after {
+    content: "";
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #aaa;
+    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  .pied-de-page__lien a:hover::after {
+    width: 100%;
+  }
 }
-.pied-de-page__lien a:hover::after {
-  width: 100%;
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__lien a::after {
+    content: "";
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #aaa;
+    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  .pied-de-page__lien a:hover::after {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page__lien a::after {
+    content: "";
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #aaa;
+    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  .pied-de-page__lien a:hover::after {
+    width: 100%;
+  }
 }
 .pied-de-page__icone {
   margin-right: 10px;
@@ -904,9 +936,69 @@ a {
 /*--------------------------------------------*/
 /*==       PIED DE PAGE (FOOTER)              */
 /*--------------------------------------------*/
+/*.pied-de-page{
+    padding: 20px;
+    background-color: $couleur-pied-de-page;
+    &__titre{
+        color: $couleur-blanc;
+        font-weight: unset;
+        font-size: 1.1rem;
+    }
+    &__lien{
+        margin-bottom: 5px;
+        & a{
+            color:$couleur-blanc;
+            font-size: .9rem;
+        }
+    }
+    &__icone{
+        margin-right: 10px;
+        &--fourchette{
+            font-size: .8rem;
+            padding-right: 2px;
+        }
+        &--partenaire{
+            font-size: .7rem;
+        }
+    }
+}*/
+/*--------------------------------------------*/
+/*==       PIED DE PAGE (FOOTER)              */
+/*--------------------------------------------*/
 .pied-de-page {
   padding: 20px;
   background-color: #353535;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .pied-de-page__titre {
   color: #fff;
@@ -919,6 +1011,51 @@ a {
 .pied-de-page__lien a {
   color: #fff;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .pied-de-page__lien a::after {
+    content: "";
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #aaa;
+    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  .pied-de-page__lien a:hover::after {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .pied-de-page__lien a::after {
+    content: "";
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #aaa;
+    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  .pied-de-page__lien a:hover::after {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pied-de-page__lien a::after {
+    content: "";
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #aaa;
+    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  .pied-de-page__lien a:hover::after {
+    width: 100%;
+  }
 }
 .pied-de-page__icone {
   margin-right: 10px;

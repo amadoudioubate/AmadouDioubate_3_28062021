@@ -234,7 +234,7 @@
 /*--------------------------------------------*/
 /*==       PIED DE PAGE (FOOTER)              */
 /*--------------------------------------------*/
-.pied-de-page{
+/*.pied-de-page{
     padding: 20px;
     background-color: $couleur-pied-de-page;
     &__titre{
@@ -259,5 +259,6 @@
             font-size: .7rem;
         }
     }
-}
+}*/
+@import "../layout/footer";
 
