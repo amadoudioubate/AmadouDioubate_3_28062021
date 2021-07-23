@@ -909,6 +909,7 @@ a {
   margin-top: 15px;
   margin-bottom: 30px;
   width: 150px;
+  cursor: pointer;
 }
 .menu__bouton:hover {
   opacity: 1;
