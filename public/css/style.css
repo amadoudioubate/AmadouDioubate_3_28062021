@@ -598,7 +598,7 @@ a {
     height: 2px;
     border-radius: 2px;
     background: #aaa;
-    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    transition: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
   }
   .pied-de-page__lien a:hover::after {
     width: 100%;
@@ -613,7 +613,7 @@ a {
     height: 2px;
     border-radius: 2px;
     background: #aaa;
-    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    transition: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
   }
   .pied-de-page__lien a:hover::after {
     width: 100%;
@@ -628,7 +628,7 @@ a {
     height: 2px;
     border-radius: 2px;
     background: #aaa;
-    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    transition: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
   }
   .pied-de-page__lien a:hover::after {
     width: 100%;
@@ -1022,7 +1022,7 @@ a {
     height: 2px;
     border-radius: 2px;
     background: #aaa;
-    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    transition: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
   }
   .pied-de-page__lien a:hover::after {
     width: 100%;
@@ -1037,7 +1037,7 @@ a {
     height: 2px;
     border-radius: 2px;
     background: #aaa;
-    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    transition: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
   }
   .pied-de-page__lien a:hover::after {
     width: 100%;
@@ -1052,7 +1052,7 @@ a {
     height: 2px;
     border-radius: 2px;
     background: #aaa;
-    transform: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    transition: width 200ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
   }
   .pied-de-page__lien a:hover::after {
     width: 100%;
