@@ -4,6 +4,9 @@
 .en-tete{
     background-color: $couleur-blanc;
     height: 60px;
+    position: sticky;
+    top: 0px;
+    z-index: 999999999999999;
     //width: 100%;
     @include centrerHorizontalVertical;
     @include desktop{
