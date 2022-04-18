@@ -14,5 +14,5 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 - Mettre en œuvre des effets CSS graphiques avancés
 - Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 
-Lien site web : https://amadoudioubate.github.io/AmadouDioubate_3_28062021/
+Lien site web :  https://amadoudioubate.github.io/Ohmyfood/
 
